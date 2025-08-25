@@ -1,0 +1,17 @@
+# Python
+backend/venv/
+__pycache__/
+*.pyc
+
+# Node/React Native
+frontend/node_modules/
+frontend/.expo/
+frontend/.expo-shared/
+
+# Environment
+backend/.env
+.env
+*.log
+
+# Docker volumes
+dbdata/

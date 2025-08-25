@@ -10,6 +10,28 @@ Manage fishing fleets across multiple companies: register boats, manage crew, sc
 - **Notifications:** (planned) Firebase Cloud Messaging
 - **Dev Tools:** DBeaver/pgAdmin, Notion, GitHub
 
+## Project Structure
+
+boat-schedule-app/
+├─ backend/
+│ ├─ app/
+│ │ ├─ init.py
+│ │ ├─ main.py # FastAPI app + routers
+│ │ ├─ database.py # SQLAlchemy engine/session
+│ │ ├─ models.py # Company, Boat, Crew, Trip
+│ │ ├─ schemas.py # Pydantic schemas
+│ │ └─ routes/
+│ │ └─ boats.py # /boats CRUD
+│ ├─ .env # DB config (NOT committed)
+│ └─ requirements.txt
+├─ frontend/
+│ ├─ App.tsx
+│ └─ src/
+│ ├─ lib/api.ts
+│ └─ screens/Boats.tsx
+├─ docker-compose.yml
+└─ README.md
+
 
 ## Prerequisites
 - Node 18+ and npm
@@ -48,4 +70,3 @@ Manage fishing fleets across multiple companies: register boats, manage crew, sc
 
 ## License
 Private (proprietary) — update later if needed.
-
